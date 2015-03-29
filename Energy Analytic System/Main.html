@@ -167,7 +167,7 @@
   	setInterval(function() { mockData(HairdryerCallback) }, 3000); 
   	setInterval(function() { mockData(UsageCallback) }, 3000); 
   	setInterval(function() { influxDbCurrentUtilityCost(CostCallback) }, 3000); 
-  	setInterval(function() { mockData(CurrentCallback) }, 3000); 
+  	setInterval(function() { influxDbInst("total_usage", CurrentCallback) }, 3000); 
 	</script>
 
 </body></html>
