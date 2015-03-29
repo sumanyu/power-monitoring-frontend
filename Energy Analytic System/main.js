@@ -184,7 +184,7 @@ function CostCallback(data) {
 		    // no points exist
 		    instValue = 0.0;
 		} else {
-			instValue = instObject.points[0].mean;
+			instValue = instObject.points[0].first;
 		}
 	}
 		console.log(parseInt(instValue));
@@ -307,27 +307,31 @@ function mockData(callback) {
 	data = [object];
 	callback(data);
 }
-	
-//Gets the instantaneous current value for any field
-function influxDbInst(influxdb, field_name, instCallback) {
-	var fieldPattern = "mean(" + field_name + ")"
-	var query = "power_consumption where time > (now()-5s) group by time(3s) order asc"
-	influxdb.readPoint(fieldPattern, query, instCallback)
-}
 
-function getCurrentUtilityCost(influxdb, instCallback) = {
-	var fieldPattern = first("power_cost")
-	var query = "power_consumption where time > (now() - 1d)"
-	influxdb.readPoint(fieldPattern, query, instCallback)
-}
 	
-/*influxdb = new InfluxDB({
+influxdb = new InfluxDB({
   "host" :"10.10.10.10",
   "port" :"8086",
   "username" :"root",
   "password" :"root",
   "database" :"demo"
 });
+
+
+//Gets the instantaneous current value for any field
+function influxDbInst(field_name, instCallback) {
+	var fieldPattern = "mean(" + field_name + ")"
+	var query = "power_consumption where time > (now()-5s) group by time(3s) order asc"
+	influxdb.readPoint(fieldPattern, query, instCallback)
+}
+
+function influxDbCurrentUtilityCost(instCallback) {
+	var fieldPattern = "first(power_cost)"
+	var query = "power_consumption where time > (now() - 1d)"
+	influxdb.readPoint(fieldPattern, query, instCallback)
+}
+	
+/*
 var field = "laundry_washer"
 var fieldPattern = "mean(" + field + ")"
 var query = "power_consumption where time > (now()-5s) group by time(3s) order asc"
