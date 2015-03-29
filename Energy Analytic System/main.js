@@ -26,15 +26,15 @@ function PieChartCallback(data) {
 function mockDataPieChart(callback) {
 	jsonData = {
 			  "cols": [
-					{"id":"","label":"Topping","pattern":"","type":"string"},
+					{"id":"","label":"Appliances","pattern":"","type":"string"},
 					{"id":"","label":"Slices","pattern":"","type":"number"}
 				  ],
 			  "rows": [
-					{"c":[{"v":"Mushrooms","f":null},{"v":3,"f":null}]},
-					{"c":[{"v":"Onions","f":null},{"v":1,"f":null}]},
-					{"c":[{"v":"Olives","f":null},{"v":1,"f":null}]},
-					{"c":[{"v":"Zucchini","f":null},{"v":1,"f":null}]},
-					{"c":[{"v":"Pepperoni","f":null},{"v":2,"f":null}]}
+					{"c":[{"v":"Fridge","f":null},{"v":3,"f":null}]},
+					{"c":[{"v":"Washer","f":null},{"v":1,"f":null}]},
+					{"c":[{"v":"Lamp","f":null},{"v":1,"f":null}]},
+					{"c":[{"v":"Toaster","f":null},{"v":1,"f":null}]},
+					{"c":[{"v":"Lamp","f":null},{"v":2,"f":null}]}
 				  ]
 			}
 	
@@ -79,11 +79,11 @@ function currentPieChart(data) {
 	
 	chart.draw(data, options);
 }
-	
+
 function mockCurrentPieChart(callback) {
 	jsonData = {
 			  "cols": [
-					{"id":"","label":"Topping","pattern":"","type":"string"},
+					{"id":"","label":"Appliances","pattern":"","type":"string"},
 					{"id":"","label":"Slices","pattern":"","type":"number"}
 				  ],
 			  "rows": [
@@ -126,15 +126,15 @@ function costPieChart(data) {
 function mockCostPieChart(callback) {
 	jsonData = {
 			  "cols": [
-					{"id":"","label":"Topping","pattern":"","type":"string"},
+					{"id":"","label":"Appliances","pattern":"","type":"string"},
 					{"id":"","label":"Slices","pattern":"","type":"number"}
 				  ],
 			  "rows": [
-					{"c":[{"v":"Mushrooms","f":null},{"v":3,"f":null}]},
-					{"c":[{"v":"Onions","f":null},{"v":1,"f":null}]},
-					{"c":[{"v":"Olives","f":null},{"v":1,"f":null}]},
-					{"c":[{"v":"Zucchini","f":null},{"v":1,"f":null}]},
-					{"c":[{"v":"Pepperoni","f":null},{"v":2,"f":null}]}
+					{"c":[{"v":"Fridge","f":null},{"v":3,"f":null}]},
+					{"c":[{"v":"Washer","f":null},{"v":1,"f":null}]},
+					{"c":[{"v":"Lamp","f":null},{"v":1,"f":null}]},
+					{"c":[{"v":"Toaster","f":null},{"v":1,"f":null}]},
+					{"c":[{"v":"Lamp","f":null},{"v":2,"f":null}]}
 				  ]
 			}
 	
