@@ -308,6 +308,18 @@ function mockData(callback) {
 	callback(data);
 }
 	
+//Gets the instantaneous current value for any field
+function influxDbInst(influxdb, field_name, instCallback) {
+	var fieldPattern = "mean(" + field_name + ")"
+	var query = "power_consumption where time > (now()-5s) group by time(3s) order asc"
+	influxdb.readPoint(fieldPattern, query, instCallback)
+}
+
+function getCurrentUtilityCost(influxdb, instCallback) = {
+	var fieldPattern = first("power_cost")
+	var query = "power_consumption where time > (now() - 1d)"
+	influxdb.readPoint(fieldPattern, query, instCallback)
+}
 	
 /*influxdb = new InfluxDB({
   "host" :"10.10.10.10",
