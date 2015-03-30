@@ -342,7 +342,7 @@ setInterval(influxdb.readPoint(fieldPattern, query, instCallback) , 5000); //wha
 //-----------------------------Recommendation 2--------------------------------------------------------
 function recom2() {
 	var act = Math.random()*15;
-	var save = ((act-8)*6*3600*365/3600000*12).toFixed(2);
+	var save = ((act-8)*6*3600*365/3600000*12/100).toFixed(2);
 	console.log(act)
 	//average power of a LED lightbulb = 8W
 	if (act > 8) {
@@ -351,10 +351,4 @@ function recom2() {
 	}
 }	
 //-----------------------------Recommendation 3--------------------------------------------------------
-function recom3() {
-	var time = Math.random() * 2000;
-	//use the value generated during demo as daily use to calculate yearly saving
-	//5w is the average consumption of off devices, time is in second
-	var cost = (time*365*5/3600000*12).toFixed(2);
-	 $("#recommendation3").text($("#recommendation3").text().replace("0", cost));
-}	 
+	 
