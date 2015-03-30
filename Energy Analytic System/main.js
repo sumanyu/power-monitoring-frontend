@@ -30,11 +30,12 @@ function mockDataPieChart(callback) {
 					{"id":"","label":"Slices","pattern":"","type":"number"}
 				  ],
 			  "rows": [
-					{"c":[{"v":"Fridge","f":null},{"v":3,"f":null}]},
-					{"c":[{"v":"Washer","f":null},{"v":1,"f":null}]},
-					{"c":[{"v":"Lamp","f":null},{"v":1,"f":null}]},
-					{"c":[{"v":"Toaster","f":null},{"v":1,"f":null}]},
-					{"c":[{"v":"Lamp","f":null},{"v":2,"f":null}]}
+					{"c":[{"v":"Fridge","f":null},{"v":309,"f":null}]},
+					{"c":[{"v":"Washer","f":null},{"v":207,"f":null}]},
+					{"c":[{"v":"Lamp","f":null},{"v":59,"f":null}]},
+					{"c":[{"v":"Toaster","f":null},{"v":7,"f":null}]},
+					{"c":[{"v":"Kettle","f":null},{"v":12,"f":null}]},
+					{"c":[{"v":"Hair Dryer","f":null},{"v":30,"f":null}]}
 				  ]
 			}
 	
@@ -87,11 +88,12 @@ function mockCurrentPieChart(callback) {
 					{"id":"","label":"Slices","pattern":"","type":"number"}
 				  ],
 			  "rows": [
-					{"c":[{"v":"Mushrooms","f":null},{"v":3,"f":null}]},
-					{"c":[{"v":"Onions","f":null},{"v":1,"f":null}]},
-					{"c":[{"v":"Olives","f":null},{"v":1,"f":null}]},
-					{"c":[{"v":"Zucchini","f":null},{"v":1,"f":null}]},
-					{"c":[{"v":"Pepperoni","f":null},{"v":2,"f":null}]}
+					{"c":[{"v":"Fridge","f":null},{"v":3,"f":null}]},
+					{"c":[{"v":"Washer","f":null},{"v":1,"f":null}]},
+					{"c":[{"v":"Lamp","f":null},{"v":1,"f":null}]},
+					{"c":[{"v":"Toaster","f":null},{"v":1,"f":null}]},
+					{"c":[{"v":"Kettle","f":null},{"v":2,"f":null}]},
+					{"c":[{"v":"Hair Dryer","f":null},{"v":2,"f":null}]}
 				  ]
 			}
 	
@@ -130,11 +132,12 @@ function mockCostPieChart(callback) {
 					{"id":"","label":"Slices","pattern":"","type":"number"}
 				  ],
 			  "rows": [
-					{"c":[{"v":"Fridge","f":null},{"v":3,"f":null}]},
-					{"c":[{"v":"Washer","f":null},{"v":1,"f":null}]},
-					{"c":[{"v":"Lamp","f":null},{"v":1,"f":null}]},
-					{"c":[{"v":"Toaster","f":null},{"v":1,"f":null}]},
-					{"c":[{"v":"Lamp","f":null},{"v":2,"f":null}]}
+					{"c":[{"v":"Fridge","f":null},{"v":122,"f":null}]},
+					{"c":[{"v":"Washer","f":null},{"v":83,"f":null}]},
+					{"c":[{"v":"Lamp","f":null},{"v":17,"f":null}]},
+					{"c":[{"v":"Toaster","f":null},{"v":15,"f":null}]},
+					{"c":[{"v":"Kettle","f":null},{"v":24,"f":null}]},
+					{"c":[{"v":"Hair Dryer","f":null},{"v":21,"f":null}]}
 				  ]
 			}
 	
