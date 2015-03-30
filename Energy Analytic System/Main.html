@@ -161,12 +161,25 @@
 	<script type="text/javascript" src="jquery.ajax-cross-origin.min.js"></script>
   <script src="main.js" type="text/javascript"></script>
 	<script>
+    mockData(LampCallback);
   	setInterval(function() { mockData(LampCallback) }, 3000); 
+
+    mockData(ToasterCallback);
   	setInterval(function() { mockData(ToasterCallback) }, 3000); 
+
+    mockData(KettleCallback);
   	setInterval(function() { mockData(KettleCallback) }, 3000); 
+
+    mockData(HairdryerCallback);
   	setInterval(function() { mockData(HairdryerCallback) }, 3000); 
+
+    influxDbCurrentEnergy(UsageCallback);
   	setInterval(function() { influxDbCurrentEnergy(UsageCallback) }, 3000); 
+
+    influxDbCurrentUtilityCost(CostCallback);
   	setInterval(function() { influxDbCurrentUtilityCost(CostCallback) }, 3000); 
+
+    influxDbInst("total_usage", CurrentCallback);
   	setInterval(function() { influxDbInst("total_usage", CurrentCallback) }, 3000); 
 	</script>
 
