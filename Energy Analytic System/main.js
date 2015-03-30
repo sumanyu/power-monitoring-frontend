@@ -163,13 +163,17 @@ function UsageCallback(data) {
 		    // no points exist
 		    instValue = 0.0;
 		} else {
-			instValue = instObject.points[0].mean;
+			instValue = instObject.points[0].first;
 		}
 	}
-		console.log(parseInt(instValue));
-		// Change the values of the pie charts
+
+	//Normalize the data
+	instValue = instValue/(2.7 * 10000000);
+
+	console.log(parseInt(instValue));
+	// Change the values of the pie charts
 	updateGui("MonthlyUsage_Number", parseInt(instValue));
-	}
+}
 
 function CostCallback(data) {
 		var instValue;
@@ -327,7 +331,13 @@ function influxDbInst(field_name, instCallback) {
 
 function influxDbCurrentUtilityCost(instCallback) {
 	var fieldPattern = "first(power_cost)"
-	var query = "power_consumption where time > (now() - 1d)"
+	var query = "power_consumption where time > (now() - 10m)"
+	influxdb.readPoint(fieldPattern, query, instCallback)
+}
+
+function influxDbCurrentEnergy(instCallback) {
+	var fieldPattern = "first(total_energy)"
+	var query = "power_consumption where time > (now() - 10m)"
 	influxdb.readPoint(fieldPattern, query, instCallback)
 }
 	
