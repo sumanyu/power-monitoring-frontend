@@ -85,7 +85,7 @@ padding: 50px 120px;
 .outerdiv
 {
 width:930px;
-height:358px;
+height:308px;
 overflow:hidden;
 position:relative;
 }
@@ -98,22 +98,61 @@ left:-325px;
 width:1892px;
 height:1200px;
 }
+
 #FridgeTrend
 {
-position:absolute;
-top:-425px;
-left:-325px;
-width:1892px;
-height:1200px;
+	position:absolute;
+	top:-375px;
+	left:-325px;
+	width:1892px;
+	height:1200px;
 }
+
 #LaundryTrend
 {
-position:absolute;
-top:-790px;
-left:-325px;
-width:1892px;
-height:1200px;
+	position:absolute;
+	top:-690px;
+	left:-325px;
+	width:1892px;
+	height:1200px;
 }
+
+#KettleTrend
+{
+	position:absolute;
+	top:-690px;
+	left:-325px;
+	width:1892px;
+	height:1200px;
+}
+
+#ToasterTrend
+{
+	position:absolute;
+	top:-690px;
+	left:-325px;
+	width:1892px;
+	height:1200px;
+}
+
+#HairDryerTrend
+{
+	position:absolute;
+	top:-690px;
+	left:-325px;
+	width:1892px;
+	height:1200px;
+}
+
+#LampTrend
+{
+	position:absolute;
+	top:-690px;
+	left:-325px;
+	width:1892px;
+	height:1200px;
+}
+
 
 .recommendation3
 {
